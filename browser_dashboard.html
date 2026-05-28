@@ -19,7 +19,6 @@
             transition: background-color 0.5s ease;
             background-color: #964B00;
             
-            /* Subtle Charpai / Woven Mesh Texture Overlay */
             background-image: 
                 linear-gradient(90deg, rgba(0, 0, 0, 0.07) 50%, transparent 50%),
                 linear-gradient(rgba(255, 255, 255, 0.04) 50%, transparent 50%);
@@ -27,17 +26,20 @@
         }
 
         .profile-card, .dashboard-container {
-            background-color: #A69080;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 3px 6px #191919;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
             margin-bottom: 20px;
         }
 
         section {
             margin-bottom: 15px;
             padding-bottom: 20px;
-            border-bottom: 1px solid #F5E8D3;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
         }
 
         section:last-child { border-bottom: none; }
@@ -46,7 +48,7 @@
             font-size: 1.6rem; 
             margin: 0 0 20px 0; 
             color: #1D1D1D; 
-            border-bottom: 1px solid #F5E8D3;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
         }
         
         h2 { font-size: 1.2rem; margin: 0 0 10px 0; color: #1D1D1D; }
@@ -104,7 +106,6 @@
     </style>
     
 </head>
-
 <body>
 
     <header class="profile-card">
@@ -190,6 +191,5 @@
 
         window.onresize = updateStyle;
     </script>
-    
 </body>
 </html>
