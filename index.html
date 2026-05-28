@@ -262,7 +262,7 @@
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        const squaresCount = 100;
+        const squaresCount = 70;
         const squares = [];
         const colors = [
             'rgba(255, 255, 255, 0.15)',
@@ -272,8 +272,8 @@
 
         class RoundedSquare {
             constructor() {
-                this.size = Math.random() * 90 + 40;
-                this.radius = this.size / 3;
+                this.size = Math.random() * 50 + 20;
+                this.radius = this.size / 2;
                 this.borderRadius = this.size * 0.25;
                 this.x = Math.random() * (canvas.width - this.size);
                 this.y = Math.random() * (canvas.height - this.size);
