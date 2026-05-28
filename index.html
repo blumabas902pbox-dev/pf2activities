@@ -1,0 +1,380 @@
+<!Programmer: Bryan Jay M. Lumabas>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Portal</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.5;
+            font-size: 15px;
+            color: #222222;
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 0 15px;
+            background-color: #A69080; 
+        }
+
+        .profile-card, .links-card {
+            background-color: #F5E8D3; 
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #191919;
+            margin-bottom: 20px;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        h1 { font-size: 1.6rem; margin: 0 0 20px 0; color: #1D1D1D; border-bottom: 2px solid #A69080; padding-bottom: 10px; }
+        h2 { font-size: 1.2rem; margin: 0 0 15px 0; color: #1D1D1D; text-transform: uppercase; letter-spacing: 0.03em; }
+
+        p { 
+            display: flex; 
+            align-items: flex-start; 
+            margin: 10px 0; 
+            color: #2D2D2D;
+        }
+
+        .info-label { 
+            font-weight: 700; 
+            color: #1D1D1D;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            width: 180px; 
+            flex-shrink: 0;
+        }
+
+        p span:not(.info-label) {
+            word-break: break-all;
+            flex-grow: 1;
+        }
+
+        ul { list-style: none; padding: 0; margin: 0; }
+        li { margin-bottom: 12px; }
+
+        .activity-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333333;
+            color: #F7F7F7;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .activity-link:hover {
+            background-color: #555555;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .link-tag {
+            font-size: 0.65rem;
+            background: #4D4D4D;
+            padding: 2px 6px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            p { flex-direction: column; }
+            .info-label { width: 100%; margin-bottom: 2px; }
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="profile-card">
+        <h1>Student Profile</h1>
+        <p><span class="info-label">Name:</span> <span>Bryan Jay Madrideo Lumabas</span></p>
+        <p><span class="info-label">Sex:</span> <span>Male</span></p>
+        <p><span class="info-label">Address:</span> <span>Zone 1, Aniog, Sagñay 4421, Camarines Sur</span></p>
+        <p><span class="info-label">Course/Yr/Sec:</span> <span>BSIT2D</span></p>
+        <p><span class="info-label">School:</span> <span>Partido State University</span></p>
+        <p><span class="info-label">School ID:</span> <span> 202210531</span></p>
+        <p><span class="info-label">Academic Year:</span> <span>2nd Semester (2025-2026)</span></p>
+        <p><span class="info-label">Course Code:</span> <span>[PF2] Event-Driven Programming</span></p>
+        <p><span class="info-label">Instructor:</span> <span>Arjay Abio</span></p>
+    </div>
+
+    <div class="links-grid">
+        
+        <div class="links-card">
+            <h2>Activity Links</h2>
+            <ul>
+                <li>
+                    <a href="browser_dashboard.html" class="activity-link">
+                        <span>Browser Dashboard</span>
+                        <span class="link-tag">Local</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/declutter/" class="activity-link">
+                        <span>Declutter | ©BJML</span>
+                        <span class="link-tag">Local</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/Herb-Guessing-Game/" class="activity-link">
+                        <span>Herb Guessing Game</span>
+                        <span class="link-tag">Local</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/DOM-Comparison-PT1/" class="activity-link">
+                        <span>Interactive DOM v innerHTML Pt.1</span>
+                        <span class="link-tag">Local</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/DOM-Comparison-PT2/" class="activity-link">
+                        <span>Interactive DOM v innerHTML Pt.2</span>
+                        <span class="link-tag">Local</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/domtraversal/" class="activity-link">
+                        <span>Interactive DOM Traversal</span>
+                        <span class="link-tag">Local</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/Personal-Profile/" class="activity-link">
+                        <span>Interactive Personal Profile</span>
+                        <span class="link-tag">Local</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/C.I.R.C.L.E./" class="activity-link">
+                        <span>Interactive Shape Editor</span>
+                        <span class="link-tag">Local</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/Stopwatch/" class="activity-link">
+                        <span>Interactive Stopwatch</span>
+                        <span class="link-tag">Local</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="links-card">
+            <h2>External Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/end-credits/" target="_blank" class="activity-link">
+                        <span>End-credits Roll</span>
+                        <span class="link-tag">External</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/Excuse-Letter/" target="_blank" class="activity-link">
+                        <span>Excuse Letter</span>
+                        <span class="link-tag">External</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/Hawak-Mo-Ang-Beat-Lyrics/" target="_blank" class="activity-link">
+                        <span>Hawak Mo Ang Beat Lyrics</span>
+                        <span class="link-tag">External</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/Heart-of-a-Poet/" target="_blank" class="activity-link">
+                        <span>Heart of a Poet</span>
+                        <span class="link-tag">External</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/Let-s-Go-To-The-Beach/" target="_blank" class="activity-link">
+                        <span>Let's Go to the Beach</span>
+                        <span class="link-tag">External</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/My-Side-Hustle/" target="_blank" class="activity-link">
+                        <span>My Side Hustle</span>
+                        <span class="link-tag">External</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://m.youtube.com/watch?v=DwOsN9wLzhQ" target="_blank" class="activity-link">
+                        <span>The Great Procrastinators</span>
+                        <span class="link-tag">External</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/Unwind-and-Ponder-/" class="activity-link">
+                        <span>Unwind and Ponder</span>
+                        <span class="link-tag">External</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blumabas902pbox-dev.github.io/Voice-Selection-Mode/" target="_blank" class="activity-link">
+                        <span>Voice Selection Mode</span>
+                        <span class="link-tag">External</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.style.position = 'fixed';
+        canvas.style.top = '0';
+        canvas.style.left = '0';
+        canvas.style.width = '100vw';
+        canvas.style.height = '100vh';
+        canvas.style.zIndex = '-1';
+        canvas.style.pointerEvents = 'none';
+        document.body.appendChild(canvas);
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        const squaresCount = 100;
+        const squares = [];
+        const colors = [
+            'rgba(255, 255, 255, 0.15)',
+            'rgba(245, 232, 211, 0.18)',
+            'rgba(51, 51, 51, 0.06)'
+        ];
+
+        class RoundedSquare {
+            constructor() {
+                this.size = Math.random() * 100 + 50;
+                this.radius = this.size / 5;
+                this.borderRadius = this.size * 0.25;
+                this.x = Math.random() * (canvas.width - this.size);
+                this.y = Math.random() * (canvas.height - this.size);
+                
+                this.vx = (Math.random() - 0.5) * 1.5;
+                this.vy = (Math.random() - 0.5) * 1.5;
+                
+                this.color = colors[Math.floor(Math.random() * colors.length)];
+            }
+
+            get cx() { return this.x + this.radius; }
+            get cy() { return this.y + this.radius; }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x <= 0) {
+                    this.x = 0;
+                    this.vx *= -1;
+                } else if (this.x + this.size >= canvas.width) {
+                    this.x = canvas.width - this.size;
+                    this.vx *= -1;
+                }
+
+                if (this.y <= 0) {
+                    this.y = 0;
+                    this.vy *= -1;
+                } else if (this.y + this.size >= canvas.height) {
+                    this.y = canvas.height - this.size;
+                    this.vy *= -1;
+                }
+            }
+
+            draw() {
+                ctx.beginPath();
+
+                if (ctx.roundRect) {
+                    ctx.roundRect(this.x, this.y, this.size, this.size, this.borderRadius);
+                } else {
+                    ctx.rect(this.x, this.y, this.size, this.size);
+                }
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < squaresCount; i++) {
+            squares.push(new RoundedSquare());
+        }
+
+        function handleCollisions() {
+            for (let i = 0; i < squares.length; i++) {
+                for (let j = i + 1; j < squares.length; j++) {
+                    let s1 = squares[i];
+                    let s2 = squares[j];
+                    let dx = s2.cx - s1.cx;
+                    let dy = s2.cy - s1.cy;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+                    let minDistance = s1.radius + s2.radius;
+
+                    if (distance < minDistance) {
+
+                        let overlap = minDistance - distance;
+                        let nx = dx / (distance || 1);
+                        let ny = dy / (distance || 1);
+
+                        s1.x -= nx * overlap * 0.5;
+                        s1.y -= ny * overlap * 0.5;
+                        s2.x += nx * overlap * 0.5;
+                        s2.y += ny * overlap * 0.5;
+
+                        let kx = s1.vx - s2.vx;
+                        let ky = s1.vy - s2.vy;
+                        let p = nx * kx + ny * ky; 
+
+                        if (p > 0) { 
+                            s1.vx -= p * nx;
+                            s1.vy -= p * ny;
+                            s2.vx += p * nx;
+                            s2.vy += p * ny;
+                        }
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            handleCollisions();
+
+            squares.forEach(square => {
+                square.update();
+                square.draw();
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
